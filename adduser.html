@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="nav.css">
+    <title>home</title>
+</head>
+<body>
+    <nav>
+        <h2> <i class="fa fa-graduation-cap" aria-hidden="true"></i>MUT</h2>
+        <div id="navthings">
+            <ul class="navthings2"> <li> <i class="fa fa-home" aria-hidden="true"></i><a class="navthings3" href="/home">home</a></li></ul>
+            <ul class="navthings2"> <li> <i class="fa fa-user-plus" aria-hidden="true"></i> <a id="addusernav" class="navthings3" href="/adduser">Adduser</a></li></ul>
+            <ul class="navthings2"> <li> <i class="fa fa-globe" aria-hidden="true"></i><a class="navthings3" href="/About">About</a></li></ul>
+            <ul class="navthings2"> <li> <i class="fa fa-envelope" aria-hidden="true"></i> <a class="navthings3" href="/contacts">contacts</a></li></ul>
+        </div>
+    </nav>
+    
+    <div id="userthings">
+        <form action="/adduser" method="post"> <h1>ADD STUDENT DETAILS</h1>
+            <div  id="usernamediv" style="display: flex;flex-direction: column;"><label for="username">Username</label>
+                <input type="text" id="username"  name="name" placeholder="samuel david" >
+                <div  id="regdiv" style="display: flex;flex-direction: column;"><label for="registration">Registration No</label>
+                    <input type="text" name="registration" placeholder="sc227/4234/2022"  id="registration" >
+        
+                <div  id="emailldiv" style="display: flex;flex-direction: column;"><label for="email">Email</label>
+                <input type="email" name="email" placeholder="samueldavid@gmail.com"  id="email" >
+            
+               <div  id="contactsdiv" style="display: flex;flex-direction: column; position: relative;" > <label for="contacts">Contacts</label>
+                <input type="number" name="contacts"  id="contacts"  placeholder="0723334455"> 
+               
+            <input id="create" type="submit" value="create">
+        </form>
+    </div>
+   
+</body>
+</html>

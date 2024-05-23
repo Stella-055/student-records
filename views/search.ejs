@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav> 
+        <h2> <i class="fa fa-graduation-cap" aria-hidden="true"></i>MUT</h2>
+        <div id="navthings">
+            <ul class="navthings2"> <li> <i class="fa fa-home" aria-hidden="true"></i><a id="homenav" class="navthings3" href="/home">home</a></li></ul>
+            <ul class="navthings2"> <li> <i class="fa fa-user-plus" aria-hidden="true"></i> <a class="navthings3" href="/adduser">Adduser</a></li></ul>
+            <ul class="navthings2"> <li> <i class="fa fa-globe" aria-hidden="true"></i><a class="navthings3" href="/About">About</a></li></ul>
+            <ul class="navthings2"> <li> <i class="fa fa-envelope" aria-hidden="true"></i> <a class="navthings3" href="/contacts">contacts</a></li></ul>
+        </div>
+    </nav> <table id="tablethings">
+    <% if (result!==null) { %>
+        <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th> REGISTRATION</th>
+            <th> EMAIL</th>
+            <th> CONTACTS</th>
+            <th>ACTIONS</th>
+        </thead>
+       
+        <tbody>
+            <% result.forEach((row,index)=>{%>
+                <tr>
+                    <td><%=index%></td>
+                    <td> <%=row.name%></td>
+                    <td><%=row.registration%></td>
+                    <td><%=row.email%></td>
+                    <td><%=row.contacts%></td>
+                    <td style="padding-left: 3px;"> <a href="/delete/<%=row._id%>"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                       <a  href="/edituser/<%=row._id%>" > <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                </tr>
+               
+                    <%})%>
+        </tbody>
+    </table>
+<%}else{%>
+    <h1>NO Results found for your search</h1><%}%>
+</body>
+</html>

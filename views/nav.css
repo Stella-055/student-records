@@ -1,0 +1,111 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2F4241;
+    color: white;
+}
+#navthings{
+    display: flex;
+}
+.navthings2{
+    list-style: none;
+    padding-top: 2.5%;
+}
+#searchingthings{
+  position: relative;
+ display: flex;
+ justify-content: right;
+ width: 100%;
+ padding-top: 2%;
+ align-items: center;
+ 
+}
+#searchbutton{
+  border: none;
+}
+#searchicon{
+  position: absolute;
+   top: 39%;
+   right: 14px;
+}
+#searching{
+  
+  width: 300px;
+  border-radius: 10px;
+  height: 2.5rem;
+  border-color: #2F4241;
+ padding-left: 8px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navthings3{
+    color: white;
+    text-decoration: none;
+}
+#tablethings{
+    margin-top: 3%;
+    margin-left: 16%;
+    border: 2px solid #2F4241;
+    width: 800px;
+    
+}th, td {
+    border: 1px solid #2F4241;
+    padding: 8px;
+    text-align: left;
+  }
+  thead{
+    background-color: #2F4241;
+    color: white;
+  }
+  #userthings{
+    display: block;
+    max-width: 500px;
+    padding: 3%;
+    background-color: #2F4241;
+    color: white;
+    margin-top: 3%;
+    margin-left: 20%;
+  }
+  input{
+    height: 1.5rem;
+    margin-bottom: 3%;
+  }
+  #addusernav{
+    text-decoration: underline;
+  }
+  #contactsnav{
+    text-decoration: underline;
+  }
+  #homenav{
+    text-decoration: underline;
+  }
+  #create{
+    height: 2.0rem;
+    width: 70px;
+    display: block;
+    margin-left: 40%;
+  }
+  #contactsinfo{
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     border: 2px solid #2F4241;
+     max-width: 400px;
+     padding: 4%;
+     align-items: center;
+     margin-top: 5%;
+     margin-left: 27%;
+
+  }
+  #messages{
+    background-color: #2F4241 ; 
+    color:white; 
+   max-width: 700px;
+   margin-left: 14%;
+   margin-top: 8px;
+  height: 30px;
+   display: flex;
+   justify-content: space-around;
+    align-items: center;
+  }
+  
+ 
